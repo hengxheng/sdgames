@@ -1,0 +1,93 @@
+.site-inner{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+body.admin{
+    background: #f2f2f2;
+    color:#000;
+    text-align: center;
+}
+.admin table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+.admin table th{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+    background: #ddd;
+    color: #000;
+}
+
+.admin table th#id{
+    display:none;
+}
+.admin table td{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+}
+.admin table td.id{
+    display:none;
+}
+.pagination{
+  text-align: left;
+}
+.pagination ul{
+  list-style: none;
+}
+.pagination ul li{
+  display:inline-block;
+  padding: 10px;
+}
+.pagination ul li a{
+  color:#111;
+  text-decoration: none;
+}
+.pagination ul li.active a{
+  color: red;
+}
+
+.login-form{
+    width: 400px;
+    margin: 90px auto;
+}
+
+.btn{
+    display:inline-block;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        overflow: initial;
+    }
+    .scroll-bottom{
+        display:none;
+    }
+    #win-me{
+        display:none;
+    }
+}
+@media screen and (max-width:999px){
+    .section{
+        padding: 15px 0;
+    }
+    .content-block{
+        width: 90%;
+        margin:15px auto;
+    }
+    #section-2 .content-block{
+        width: 90%;
+        margin:15px auto;
+        float:none;
+    }
+}

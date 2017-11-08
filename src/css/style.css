@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url("../fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Light.woff") format("woff"), url("../fonts/Gotham-Light.ttf") format("truetype"), url("../fonts/Gotham-Light.svg#Gotham-Light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url("../fonts/Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Medium.woff") format("woff"), url("../fonts/Gotham-Medium.ttf") format("truetype"), url("../fonts/Gotham-Medium.svg#Gotham-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url("../fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body, html {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000;
+  font-family: 'Gotham-Book'; }
+
+h1, h2, strong {
+  font-family: 'Gotham-Bold'; }
+
+.clear {
+  clear: both; }
+
+.site-inner {
+  width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  @media screen and (max-width: 1500px) {
+    .site-inner {
+      width: 100%; } }
+
+.btn {
+  display: inline-block;
+  padding: 10px 35px;
+  font-family: 'Gotham-Bold';
+  color: #242424;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #f8f8f8;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+  border: 1px solid #f8f8f8; }
+  .btn:hover {
+    color: #f8f8f8;
+    text-decoration: none;
+    background: #242424;
+    border: 1px solid #f8f8f8; }
+
+#pp-nav {
+  display: none; }
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+  text-align: right;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .site-header #site-nav {
+    padding: 0;
+    margin: 0; }
+    .site-header #site-nav li {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 15px; }
+      .site-header #site-nav li a {
+        display: block;
+        width: 90px;
+        height: 50px; }
+    .site-header #site-nav #sw-btn a {
+      background: url(../images/switch.png) no-repeat center center; }
+    .site-header #site-nav #sw-btn.active a {
+      background: url(../images/switch-actived.png) no-repeat center center; }
+    .site-header #site-nav #ps-btn a {
+      background: url(../images/ps4.png) no-repeat center center; }
+    .site-header #site-nav #ps-btn.active a {
+      background: url(../images/ps4-actived.png) no-repeat center center; }
+    .site-header #site-nav #xb-btn a {
+      background: url(../images/xbox.png) no-repeat center center; }
+    .site-header #site-nav #xb-btn.active a {
+      background: url(../images/xbox-actived.png) no-repeat center center; }
+
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+  color: #fff; }
+  .site-footer .footer-top {
+    color: #BCBEC0;
+    font-size: 10px;
+    padding: 20px 0; }
+  .site-footer .footer-bottom {
+    background: #231F20; }
+
+.section {
+  background: #fff; }
+  .section .section-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .section .section-inner .section-text {
+      width: 50%; }
+      .section .section-inner .section-text .logo {
+        margin: 0 0 50px; }
+      .section .section-inner .section-text ul {
+        padding: 0 0 0 20px;
+        margin: 50px 0; }
+        .section .section-inner .section-text ul li {
+          margin: 0 0 10px;
+          font-size: 16px; }
+    .section .section-inner .section-img {
+      width: 50%; }
+      .section .section-inner .section-img img {
+        max-width: 100%; }
+
+.device-list {
+  padding: 0;
+  margin: 0; }
+  .device-list li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 15px; }
+    .device-list li:first-child {
+      margin-left: 0; }
+    .device-list li a {
+      display: block;
+      width: 90px;
+      height: 50px; }
+  .device-list #sw-item a {
+    background: url(../images/switch.png) no-repeat center center; }
+  .device-list #sw-item:hover a {
+    background: url(../images/switch-actived.png) no-repeat center center; }
+  .device-list #ps-item a {
+    background: url(../images/ps4.png) no-repeat center center; }
+  .device-list #ps-item:hover a {
+    background: url(../images/ps4-actived.png) no-repeat center center; }
+  .device-list #xb-item a {
+    background: url(../images/xbox.png) no-repeat center center; }
+  .device-list #xb-item:hover a {
+    background: url(../images/xbox-actived.png) no-repeat center center; }
+
+#p1 {
+  background: url(../images/home-bg.png) no-repeat center center #fff;
+  background-size: cover; }
+
+#p2 {
+  background: url(../images/p2-bg.png) no-repeat center right #fff; }
+
+#p3 {
+  background: url(../images/p3-bg.png) no-repeat center right #fff; }
+
+#p4 {
+  background: url(../images/p4-bg.png) no-repeat center right #fff; }
+
+h2 {
+  font-size: 42px;
+  margin: 0 0 10px; }
+
+h3 {
+  font-size: 38px;
+  margin: 0 0 50px; }
+
+h4 {
+  font-size: 26px;
+  margin: 0 0 50px; }
