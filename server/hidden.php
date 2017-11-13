@@ -94,7 +94,7 @@
 		<div class="site-inner">
 			<br/>
 			<p>Total entries: <?php echo $result->num_rows; ?></p>
-			<p><a href="<?php echo $base_url; ?>/genXML.php" class="btn">Generate XML files</a></p>
+			<p><a href="<?php echo $base_url; ?>/export.php" class="btn">Export</a></p>
 			<?php
 				// pagination
 				$reload = $_SERVER['PHP_SELF'] . "?tpages=" . $tpages;

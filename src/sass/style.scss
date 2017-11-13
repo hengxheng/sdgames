@@ -107,6 +107,10 @@ h1, h2, strong{
   text-align: right;
   padding: 25px;
   box-sizing:border-box;
+  @media screen and (max-width: 1100px){
+    position:static;
+    text-align: center;
+  }
   #site-nav{
     padding:0;
     margin:0;
@@ -161,6 +165,9 @@ h1, h2, strong{
   width: 100%;
   z-index: 50;
   color: #fff;
+  @media screen and (max-width: 1100px){
+    position: static;
+  }
   .footer-top{
     color: #BCBEC0;
     font-size: 10px;
@@ -183,9 +190,17 @@ h1, h2, strong{
         line-height: 1.1;
         width: 40%;
         font-weight: bold;
+        @media screen and (max-width: 1100px){
+          width: 100%;
+          margin: 0 0 15px;
+        }
       }
       .footer-form{
         width: 50%;
+        @media screen and (max-width: 1100px){
+          width: 100%;
+          margin: 0 0 15px;
+        }
         input{
           color:#fff;
           padding: 15px;
@@ -201,11 +216,17 @@ h1, h2, strong{
             font-size: 18px;
             font-family: 'Gotham-Book';
           }
+          @media screen and (max-width: 650px){
+            width: 100%;
+          }
         }
         input[type="submit"]{
           background: #fff;
           color: #000;
           width: 26%;
+          @media screen and (max-width: 650px){
+            width: 100%;
+          }
         }
       }
       .footer-right{
@@ -213,6 +234,9 @@ h1, h2, strong{
         color: #fff;
         align-self: flex-end;
         font-weight:300;
+        @media screen and (max-width: 1100px){
+          width: 100%;
+        }
         a{
           color:#fff;
           font-size: 14px;
@@ -228,17 +252,24 @@ h1, h2, strong{
 
 .section{
   background: #fff;
+  @media screen and (max-width: 1100px){
+    margin: 0 0 30px;
+  }
   .section-inner{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     .section-text{
-      width: 50%;
+      width: 55%;
       font-size: 20px;
       line-height: 1.1;
+      
       .logo{
         margin: 0 0 30px;
+        img{
+          max-width: 80%;
+        }
       }
       h3{
         margin: 0 0 30px;
@@ -247,6 +278,7 @@ h1, h2, strong{
       h2{
         font-size: 55px;
         margin: 0 0 10px;
+        color: #18A0DB;
       }
       h4{
         font-size: 30px;
@@ -268,9 +300,25 @@ h1, h2, strong{
           font-size: 16px;
         }
       }
+      @media screen and (max-width: 1100px){
+        width: 100%;
+        padding: 40px 0;
+        margin: 0 0 25px;
+        h2{
+          font-size: 45px;
+          margin: 0 0 10px;
+        }
+        h3{
+          margin: 0 0 30px;
+          font-size: 38px;
+        }
+      }
     }
     .section-img{
-      width: 50%;
+      width: 45%;
+      @media screen and (max-width: 1100px){
+        width: 100%;
+      }
       img{
         max-width: 100%;
       }
@@ -287,7 +335,7 @@ h1, h2, strong{
 }
 
 .device-list{
-  padding:0;
+  padding:0 !important;
   margin:0;
   li{
     display:inline-block;
@@ -356,6 +404,9 @@ h1, h2, strong{
   .section-text{
     align-self: center;
   }
+  .section-inner .section-text h2{
+    color: #000;
+  }
 }
 
 #p2{
@@ -364,6 +415,12 @@ h1, h2, strong{
     .section-text{
       h2{
         color: #EC2227;
+      }
+    }
+    .section-img{
+      align-self: center;
+      img{
+        margin-bottom: 50px;
       }
     }
   }
