@@ -11,7 +11,7 @@
     $sql = "CREATE TABLE IF NOT EXISTS {$table_name} (
             id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
             fullname VARCHAR(50),
-            email VARCHAR(50),
+            email VARCHAR(50)
         )";
     if ($conn->query($sql) === TRUE) {
         echo "Table {$table_name} created successfully";

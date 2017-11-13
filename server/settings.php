@@ -1,8 +1,9 @@
 <?php
 
+	date_default_timezone_set("Australia/Sydney");
+
 	$base_url = "http://localhost:8080/server";
 	$page_title = "ADMIN";
-	date_default_timezone_set("Australia/Sydney");
 	$db = "db";
 	$username = "root";
 	$password = "hidden1234";

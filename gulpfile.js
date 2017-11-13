@@ -31,7 +31,7 @@ var path = {
 };
 
 
-// ----------dev-----------
+// ------------------------------------dev--------------------------------
 gulp.task('browserSync', function() {
     browserSync.init({
       server: {
@@ -58,7 +58,7 @@ gulp.task('watch', ['browserSync'], function() {
 });
 
 
-// ----------deploy--------
+// --------------------------------------deploy------------------------------
 
 gulp.task('html', function () {
     return gulp.src('src/*.html')
@@ -95,5 +95,5 @@ gulp.task('clean', function() {
 })
 
 gulp.task('build', [`clean`, `html`, `css-build`, `js-build`, `images`, `fonts`], function (){
-    console.log('Building files');
+    console.log('Build done');
 })
