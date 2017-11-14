@@ -55,6 +55,9 @@ body{
     line-height: 1.2;
     color: #000;
     font-family: 'Gotham-Book';
+    @media screen and (max-width: 1100px){
+        padding-top: 100px !important;
+    }
 }
 
 h1, h2, strong{
@@ -110,16 +113,27 @@ h1, h2, strong{
   padding: 25px;
   box-sizing:border-box;
   @media screen and (max-width: $res-width-big){
-    position:static;
     text-align: center;
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.8);
+    background: #fff;
   }
   #site-nav{
     padding:0;
     margin:0;
+    
+    @media screen and (max-width: 650px){
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
     li{
       display:inline-block;
       vertical-align: middle;
       margin:15px;
+      @media screen and (max-width: 650px){
+        margin: 7px;
+      }
       a{
         display:block;
         width: 90px;
@@ -129,45 +143,50 @@ h1, h2, strong{
     #sw-btn{
       a{
         background:url(../images/switch.png) no-repeat center center;
+        background-size: contain;
         @media screen and (max-width: 650px){
           width: 65px;
           height: 30px;
-          background-size: cover !important;
         }
       }
-      &.active{
+      &.active, &:hover{
         a{
           background:url(../images/switch-actived.png) no-repeat center center;
+          background-size: contain;
         }
       }
     }
     #ps-btn{
       a{
         background:url(../images/ps4.png) no-repeat center center;
+        background-size: contain;
         @media screen and (max-width: 650px){
           width: 65px;
           height: 43px;
-          background-size: cover !important;
+          background-size: contain;
         }
       }
-      &.active{
+      &.active, &:hover{
         a{
           background:url(../images/ps4-actived.png) no-repeat center center;
+          background-size: contain;
         }
       }
     } 
     #xb-btn{
       a{
         background:url(../images/xbox.png) no-repeat center center;
+        background-size: contain;
         @media screen and (max-width: 650px){
           width: 65px;
           height: 43px;
-          background-size: cover !important;
+          background-size: contain;
         }
       }
-      &.active{
+      &.active, &:hover{
         a{
           background:url(../images/xbox-actived.png) no-repeat center center;
+          background-size: contain;
         }
       }
     }
@@ -242,6 +261,8 @@ h1, h2, strong{
           background: #fff;
           color: #000;
           width: 26%;
+          cursor:pointer;
+          appearance:none;
           @media screen and (max-width: 650px){
             width: 100%;
           }
@@ -278,6 +299,10 @@ h1, h2, strong{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    @media screen and (max-width:1000px){
+      flex-direction: column-reverse;
+      border-bottom: 1px solid grey;
+    }
     .section-text{
       width: 55%;
       font-size: 20px;
@@ -367,7 +392,9 @@ h1, h2, strong{
   li{
     display:inline-block;
     vertical-align: middle;
-    margin:15px;
+    margin:0 15px;
+    @media screen and (max-width: 650px){
+    }
     &:first-child{
       margin-left:0;
     }
@@ -380,30 +407,51 @@ h1, h2, strong{
   #sw-item{
     a{
       background:url(../images/switch.png) no-repeat center center;
+      background-size: contain;
+      @media screen and (max-width: 650px){
+        width: 65px;
+        height: 30px;
+        background-size: contain;
+      }
     }
     &:hover{
       a{
         background:url(../images/switch-actived.png) no-repeat center center;
+        background-size: contain;
       }
     }
   }
   #ps-item{
     a{
       background:url(../images/ps4.png) no-repeat center center;
+      background-size: contain;
+      @media screen and (max-width: 650px){
+        width: 65px;
+        height: 43px;
+        background-size: contain;
+      }
     }
     &:hover{
       a{
         background:url(../images/ps4-actived.png) no-repeat center center;
+        background-size: contain;
       }
     }
   } 
   #xb-item{
     a{
       background:url(../images/xbox.png) no-repeat center center;
+      background-size: contain;
+      @media screen and (max-width: 650px){
+        width: 65px;
+        height: 43px;
+        background-size: contain;
+      }
     }
     &:hover{
       a{
         background:url(../images/xbox-actived.png) no-repeat center center;
+        background-size: contain;
       }
     }
   }
@@ -418,15 +466,24 @@ h1, h2, strong{
     text-decoration: none;
     background: #18A0DB;
     color: #fff;
+    transition: all 0.5s linear;
+    &:hover{
+      background: rgb(16, 98, 133);
+      transition: all 0.5s linear;
+    }
     i{
       font-size: 22px;
       margin: 0 10px 0 0;
+    }
+    @media screen and (max-width: 650px){
+        width: 50%;
+        text-align: center;
     }
   }  
 }
 
 #p1{
-  background: url(../images/home-bg.png) no-repeat center center #fff;
+  background: url(../images/sandisk_home-bg.png) no-repeat center center #fff;
   background-size: cover;
   .section-text{
     align-self: center;
@@ -437,7 +494,7 @@ h1, h2, strong{
 }
 
 #p2{
-  background: url(../images/p2-bg.png) no-repeat center right #fff;
+  background: url(../images/sandisk_switch-bg.png) no-repeat right 60px #fff;
   .section-inner{
     .section-text{
       h2{
@@ -455,16 +512,21 @@ h1, h2, strong{
     a{
      color:#fff;
      background: #EC2227;
+     transition: all 0.5s linear;
+     &:hover{
+       background: rgb(197, 29, 34);
+       transition: all 0.5s linear;
+     }
     }  
   }
 }
 
 #p3{
-  background: url(../images/p3-bg.png) no-repeat center right #fff;
+  background: url(../images/p3-bg.png) no-repeat right center #fff;
 }
 
 #p4{
-  background: url(../images/p4-bg.png) no-repeat center right #fff;
+  background: url(../images/p4-bg.png) no-repeat right center #fff;
 }
 
 h2{

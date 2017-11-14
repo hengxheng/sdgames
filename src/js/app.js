@@ -1,4 +1,45 @@
 jQuery(document).ready(function($) {
+    enquire.register("screen and (max-width: 1000px)", {
+        match: function() {
+            $("#site-nav li a").click(function(e){
+                e.preventDefault();
+                var hf = $(this).attr("href");
+                $('html, body').animate({
+                    scrollTop: $(hf).offset().top-130
+                }, 1000);     
+            });
+
+            var p2 = $("#p2").offset().top-135;
+            var p3 = $("#p3").offset().top-135;
+            var p4 = $("#p4").offset().top-135;
+
+            $(window).scroll(function(e){
+                var wtop = $(window).scrollTop();
+                if(wtop>=p2 && wtop<p3){
+                    if( !$("#site-nav #sw-btn").hasClass("active")){
+                        $("#site-nav li").removeClass("active");
+                        $("#site-nav #sw-btn").addClass("active");
+                    }
+                }
+                else if(wtop>=p3 && wtop<p4){
+                    if( !$("#site-nav #ps-btn").hasClass("active")){
+                        $("#site-nav li").removeClass("active");
+                        $("#site-nav #ps-btn").addClass("active");
+                    }
+                }
+                else if(wtop>=p4){
+                    if( !$("#site-nav #xb-btn").hasClass("active")){
+                        $("#site-nav li").removeClass("active");
+                        $("#site-nav #xb-btn").addClass("active");
+                    }
+                }
+                else{
+                    $("#site-nav li").removeClass("active");
+                }
+            });
+        }
+    });
+
     enquire.register("screen and (min-width:1480px)", {
         match : function() {
             $('#fullpage').pagepiling({
@@ -8,6 +49,8 @@ jQuery(document).ready(function($) {
             });
         },
     }); 
+
+    
 
     $("#newsletterform").submit(function() {		
 		$.ajax({
@@ -24,5 +67,7 @@ jQuery(document).ready(function($) {
             }
         });
 		return false;
-	});
+    });
+    
+    
 });
