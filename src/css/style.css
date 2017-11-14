@@ -82,7 +82,7 @@ h1, h2, strong {
   padding: 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1480px) {
     .site-header {
       position: static;
       text-align: center; } }
@@ -99,14 +99,29 @@ h1, h2, strong {
         height: 50px; }
     .site-header #site-nav #sw-btn a {
       background: url(../images/switch.png) no-repeat center center; }
+      @media screen and (max-width: 650px) {
+        .site-header #site-nav #sw-btn a {
+          width: 65px;
+          height: 30px;
+          background-size: cover !important; } }
     .site-header #site-nav #sw-btn.active a {
       background: url(../images/switch-actived.png) no-repeat center center; }
     .site-header #site-nav #ps-btn a {
       background: url(../images/ps4.png) no-repeat center center; }
+      @media screen and (max-width: 650px) {
+        .site-header #site-nav #ps-btn a {
+          width: 65px;
+          height: 43px;
+          background-size: cover !important; } }
     .site-header #site-nav #ps-btn.active a {
       background: url(../images/ps4-actived.png) no-repeat center center; }
     .site-header #site-nav #xb-btn a {
       background: url(../images/xbox.png) no-repeat center center; }
+      @media screen and (max-width: 650px) {
+        .site-header #site-nav #xb-btn a {
+          width: 65px;
+          height: 43px;
+          background-size: cover !important; } }
     .site-header #site-nav #xb-btn.active a {
       background: url(../images/xbox-actived.png) no-repeat center center; }
 
@@ -118,7 +133,7 @@ h1, h2, strong {
   width: 100%;
   z-index: 50;
   color: #fff; }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1480px) {
     .site-footer {
       position: static; } }
   .site-footer .footer-top {
@@ -147,13 +162,13 @@ h1, h2, strong {
         line-height: 1.1;
         width: 40%;
         font-weight: bold; }
-        @media screen and (max-width: 1100px) {
+        @media screen and (max-width: 1480px) {
           .site-footer .footer-bottom .footer-inner .footer-text {
             width: 100%;
             margin: 0 0 15px; } }
       .site-footer .footer-bottom .footer-inner .footer-form {
         width: 50%; }
-        @media screen and (max-width: 1100px) {
+        @media screen and (max-width: 1480px) {
           .site-footer .footer-bottom .footer-inner .footer-form {
             width: 100%;
             margin: 0 0 15px; } }
@@ -200,7 +215,7 @@ h1, h2, strong {
         -ms-flex-item-align: end;
             align-self: flex-end;
         font-weight: 300; }
-        @media screen and (max-width: 1100px) {
+        @media screen and (max-width: 1480px) {
           .site-footer .footer-bottom .footer-inner .footer-right {
             width: 100%; } }
         .site-footer .footer-bottom .footer-inner .footer-right a {
@@ -213,7 +228,7 @@ h1, h2, strong {
 
 .section {
   background: #fff; }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1480px) {
     .section {
       margin: 0 0 30px; } }
   .section .section-inner {
@@ -258,9 +273,8 @@ h1, h2, strong {
         .section .section-inner .section-text ul li {
           margin: 0 0 10px;
           font-size: 16px; }
-      @media screen and (max-width: 1100px) {
+      @media screen and (max-width: 1480px) {
         .section .section-inner .section-text {
-          width: 100%;
           padding: 40px 0;
           margin: 0 0 25px; }
           .section .section-inner .section-text h2 {
@@ -269,9 +283,19 @@ h1, h2, strong {
           .section .section-inner .section-text h3 {
             margin: 0 0 30px;
             font-size: 38px; } }
+      @media screen and (max-width: 1000px) {
+        .section .section-inner .section-text {
+          width: 100%;
+          padding: 40px 0;
+          margin: 0 0 25px; } }
     .section .section-inner .section-img {
       width: 45%; }
-      @media screen and (max-width: 1100px) {
+      @media screen and (max-width: 1480px) {
+        .section .section-inner .section-img {
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          padding: 25px; } }
+      @media screen and (max-width: 1000px) {
         .section .section-inner .section-img {
           width: 100%; } }
       .section .section-inner .section-img img {

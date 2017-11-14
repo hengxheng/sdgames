@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    enquire.register("screen and (min-width:1100px)", {
+    enquire.register("screen and (min-width:1480px)", {
         match : function() {
             $('#fullpage').pagepiling({
                 menu: "#site-nav",

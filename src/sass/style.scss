@@ -41,6 +41,8 @@
 $dark: #242424;
 $grey: #edebd4;
 $site-width: 1500px;
+$res-width-big: 1480px;
+$res-width-medium: 1100px;
 
 body, html{
     padding:0;
@@ -107,7 +109,7 @@ h1, h2, strong{
   text-align: right;
   padding: 25px;
   box-sizing:border-box;
-  @media screen and (max-width: 1100px){
+  @media screen and (max-width: $res-width-big){
     position:static;
     text-align: center;
   }
@@ -127,6 +129,11 @@ h1, h2, strong{
     #sw-btn{
       a{
         background:url(../images/switch.png) no-repeat center center;
+        @media screen and (max-width: 650px){
+          width: 65px;
+          height: 30px;
+          background-size: cover !important;
+        }
       }
       &.active{
         a{
@@ -137,6 +144,11 @@ h1, h2, strong{
     #ps-btn{
       a{
         background:url(../images/ps4.png) no-repeat center center;
+        @media screen and (max-width: 650px){
+          width: 65px;
+          height: 43px;
+          background-size: cover !important;
+        }
       }
       &.active{
         a{
@@ -147,6 +159,11 @@ h1, h2, strong{
     #xb-btn{
       a{
         background:url(../images/xbox.png) no-repeat center center;
+        @media screen and (max-width: 650px){
+          width: 65px;
+          height: 43px;
+          background-size: cover !important;
+        }
       }
       &.active{
         a{
@@ -154,6 +171,7 @@ h1, h2, strong{
         }
       }
     }
+    
   }
 }
 
@@ -165,7 +183,7 @@ h1, h2, strong{
   width: 100%;
   z-index: 50;
   color: #fff;
-  @media screen and (max-width: 1100px){
+  @media screen and (max-width: $res-width-big){
     position: static;
   }
   .footer-top{
@@ -190,14 +208,14 @@ h1, h2, strong{
         line-height: 1.1;
         width: 40%;
         font-weight: bold;
-        @media screen and (max-width: 1100px){
+        @media screen and (max-width: $res-width-big){
           width: 100%;
           margin: 0 0 15px;
         }
       }
       .footer-form{
         width: 50%;
-        @media screen and (max-width: 1100px){
+        @media screen and (max-width: $res-width-big){
           width: 100%;
           margin: 0 0 15px;
         }
@@ -234,7 +252,7 @@ h1, h2, strong{
         color: #fff;
         align-self: flex-end;
         font-weight:300;
-        @media screen and (max-width: 1100px){
+        @media screen and (max-width: $res-width-big){
           width: 100%;
         }
         a{
@@ -252,7 +270,7 @@ h1, h2, strong{
 
 .section{
   background: #fff;
-  @media screen and (max-width: 1100px){
+  @media screen and (max-width: $res-width-big){
     margin: 0 0 30px;
   }
   .section-inner{
@@ -300,8 +318,7 @@ h1, h2, strong{
           font-size: 16px;
         }
       }
-      @media screen and (max-width: 1100px){
-        width: 100%;
+      @media screen and (max-width: $res-width-big){
         padding: 40px 0;
         margin: 0 0 25px;
         h2{
@@ -313,10 +330,20 @@ h1, h2, strong{
           font-size: 38px;
         }
       }
+      @media screen and (max-width: 1000px){
+        width: 100%;
+        padding: 40px 0;
+        margin: 0 0 25px;
+        
+      }
     }
     .section-img{
       width: 45%;
-      @media screen and (max-width: 1100px){
+      @media screen and (max-width: $res-width-big){
+        box-sizing: border-box;
+        padding: 25px;
+      }
+      @media screen and (max-width: 1000px){
         width: 100%;
       }
       img{
